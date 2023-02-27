@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body { background-color: burlywood;  }
+
+h1 {color: rgb(141, 69, 18);}
+
+h1#principal {color: rgb(243, 103, 2);
+text-align: center;}
+
+h2.basico {color: darkgoldenrod;}
+h2.medio { color: darkorange;}
+h2.avançado { color: goldenrod;}

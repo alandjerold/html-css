@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url('Fontes/BebasNeue-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: android;
+    src: url('Fontes/IDroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cornegrito: #278F04;
+    --corfundo: #65CC43;
+    --corletra: #278F04;
+    --corcabeçalho: #278F04;
+    --fontepadrao: Arial,Verdana,Helvetica,sans-serif;
+    --fontedestaque: 'Bebas Neue','cursive';
+    --fontandroid: 'android', 'cursive';
+
+    
+}
+
+|*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+
+    background-color: #65C24B;
+    font-family: var(--fontepadrao);
+    margin: auto;
+    
+    
+}
+
+
+main strong {
+    color: var(--cornegrito);
+
+}
+
+main h2 {
+    font-family: var(--fontandroid);
+    color:var(--corletra);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,#65cc4388, transparent);
+
+}
+
+main a {
+    color: var(--cornegrito);
+    background-color: #65cc4388;
+    padding: 2px 6px;
+    text-decoration: none;
+    
+
+}
+ main a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+
+main a::after{
+    content: '\00A0\1F517';
+
+}
+
+header {
+font-family: var(--fontedestaque);
+background-image: linear-gradient(to bottom,var(--corfundo),var(--corcabeçalho) );
+color: white;
+padding-top: 40px;
+
+}
+
+nav {
+   
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.144);
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: var(--fontepadrao);
+    text-align:center;
+    background-color: var(--corcabeçalho);
+    
+}
+
+nav >a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    
+    
+   
+}
+
+nav >a:hover{
+    background-color: var(--corfundo);
+    color:var(--cornegrito);
+    
+}
+
+header > h1 {
+    font-family: var(--fontedestaque);
+    font-size: 3em;
+    margin: 0px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.692);
+    text-align: center;
+
+}
+
+header>p {
+    font-family: var(--fontepadrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 90px;
+    text-align: center;
+    
+}
+
+main{
+box-shadow: 0px 0px 5px #023535;
+border-radius: 30px;
+min-width: 320px;
+max-width: 800px;
+background-color: white;
+margin: auto;
+margin-bottom: 20px;
+padding-top: 1px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+#irina{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+    
+article .pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+article > h1{
+    font-family: var(--fontandroid);
+    color: var(--corletra);
+
+}
+
+h3.especial{
+    background-color: var(--corcabeçalho);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    
+}
+aside > ul {
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    text-align: justify;
+}
+
+aside{
+    background-color: var(--corfundo);
+    min-width: 320px;
+    max-width: 750px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 2, 0.671);
+}
+footer{
+    background-color: var(--corcabeçalho);
+    text-align: center;
+   
+}
+footer p {
+    margin: 0px;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--corfundo);
+}
+
+div.video{
+    background-color: var(--corcabeçalho);
+    padding: 20px;
+    margin: 0px -10px 30px -10px;
+    padding-bottom: 55.2%;
+    position: relative;
+    
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+    
+}
