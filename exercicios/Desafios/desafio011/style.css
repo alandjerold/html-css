@@ -2,9 +2,13 @@
 
 * {
     margin: 0px;
+    padding: 0px;
 
 }
-
+body, html {
+    background-color: rgba(31, 25, 25, 0.774);
+    min-height: 100vh;
+}
 @font-face {
     font-family:Passion ;
     src: url(fontes/PassionOne-Regular.ttf);
@@ -34,7 +38,7 @@ header {
 
 header h1{
     font-family: var(--font01);
-    font-size: 140px;
+    font-size: 10vw;
     font-variant: small-caps;
     padding: 40px;
     padding-bottom: 0px;
@@ -60,15 +64,25 @@ header p {
     color: black;
    
     padding-left: 20px;
-    font-size: 3em;
     
+   }
+   section #imagem {
+    background-color: black;
+    color: white;
+   }
+
+   section, #imagem1 p, #imagem2 p{
+    line-height: 2em;
+    font-size: 3.3vw;
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 40vh;
    }
 
    #imagem1{
-    height: 130vh;
+    height: 100vh;
     background-image: url("imagens/background001.jpg");
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
 
 
@@ -77,22 +91,15 @@ header p {
     text-align: left;
     color: white;
     font-family: var(--font02);
-    background-color: rgba(0, 0, 0, 0.322);
-    width: 600px;
-    height: 600px;
-    font-size: 3em;
-    top: 50%;
-    
-    
-    
-
+    background-color: rgba(0, 0, 0, 0.637);
+    max-width: 600px;
+    max-height: 400px;
    }
 
    #imagem2 {
     height: 130vh;
     background-image: url("imagens/background002.jpg");
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
     
 
@@ -101,12 +108,9 @@ header p {
     text-align: left;
     color: white;
     font-family: var(--font02);
-    background-color: rgba(0, 0, 0, 0.322);
-    width: 600px;
-    height: 600px;
-    font-size: 3em;
-    
-   
+    background-color: rgba(0, 0, 0, 0.637);
+    max-width: 600px;
+    max-height: 400px;
    }
 
    footer{
