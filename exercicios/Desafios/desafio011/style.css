@@ -42,6 +42,7 @@ header h1{
     font-variant: small-caps;
     padding: 40px;
     padding-bottom: 0px;
+    padding-top: 50px;
 }
 header p {
     font-family: var(--font03);
@@ -66,17 +67,14 @@ header p {
     padding-left: 20px;
     
    }
-   section #imagem {
-    background-color: black;
-    color: white;
-   }
 
-   section, #imagem1 p, #imagem2 p{
+   section,#imagem1 > p, #imagem2 > p{
     line-height: 2em;
     font-size: 3.3vw;
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 40vh;
+    
    }
 
    #imagem1{
@@ -84,6 +82,7 @@ header p {
     background-image: url("imagens/background001.jpg");
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 
 
    }
@@ -101,7 +100,7 @@ header p {
     background-image: url("imagens/background002.jpg");
     background-position: center center;
     background-size: cover;
-    
+    background-attachment: fixed;
 
    }
    #imagem2 p {
