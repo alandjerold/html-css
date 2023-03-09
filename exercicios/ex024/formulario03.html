@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário03</title>
+</head>
+<body>
+    <h1>Tipos de caixas de formulários</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <p>
+            <label for="inomecompleto">Nome Completo:</label>
+            <input type="text" name="nomecompleto" id="inomecompleto" required minlength="8" placeholder="insira seu nome completo" autocomplete="name">
+        </p>
+        <p> 
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" step="0.5" required placeholder="0 a 10 ">
+        </p>
+
+        <p> 
+            <label for="iperiodo">Período Letivo</label>
+            <input type="month" name="periodo" id="iperiodo" required>
+        </p>
+
+        <p>
+            <label for="idate">Data da Prova:</label>
+            <input type="date" name="date" id="iname"
+            required >
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="Hora" id="ihora" required>
+        </p>
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Limpar" >
+    </form>
+
+    
+</body>
+</html>
