@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: lightgrey;
+
+}
+header h1{
+    padding: 5px;
+}
+ li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+ }
+ ul{
+    background-color: black;
+ }
+ article{
+    text-indent: 20px;
+    padding-left: 10px;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    text-align: center;
+ }
