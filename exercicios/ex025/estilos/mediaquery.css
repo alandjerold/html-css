@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*pequenas telas até 600px*/
+/*celular de 600px a 768px*/
+/*tablet de 768px a 992px*/
+/*desktop de 992px a 1200px*/
+/*grandes tela acima de 1200*/
+
+
+
+@media screen and (min-width:768px) and (max-width:992px) /*tablet*/{
+    #tv,#pc,#print,#phone{
+        display: none;
+    }
+   #tablet{
+    display: block;
+    margin: auto;
+   }
+    
+   body{
+    background-image: url(../imagens/back-tablet.jpg);
+   }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) /*desktop*/{
+
+    #tv,#tablet,#print,#phone{
+        display: none;
+    }
+    #pc{
+        display: block;
+        margin: auto;
+    }
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width: 2000px) {
+
+    #tablet,#pc,#print,#phone{
+        display: none;
+    }
+    #tv{
+        display: block;
+        margin: auto;
+    }
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+}
+
+@media print{ /*impressora*/
+
+    #phone{
+        display: none;
+    }
+
+    #print{
+        display: block;
+        margin: auto;
+    }
+
+    h1{
+        color: black;
+        text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.445);
+
+    }
+    main{
+        border: 2px solid black;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.452);
+    }
+}
