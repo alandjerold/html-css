@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    #icone{
+        display: none;
+
+    }
+
+    menu{
+        display: block;
+    
+    }
+    ul{
+        background-color: gray;
+    }
+    li {
+        display: inline-block;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        border-radius: 10px 10px 0px 0px;
+       
+    }
+
+ 
+}
